@@ -7,7 +7,7 @@ if (isset($_SESSION["login_id"])) {
     if (isset($_GET["id"]) && $_SESSION["login_id"] == $_GET["id"]) {
         $id = mysqli_real_escape_string($conn, $_GET["id"]);
         $user_sql = "SELECT * FROM user WHERE id = '{$id}';";
-        $article_sql = "SELECT article.article, article.title FROM article WHERE person_id='{$id}'";
+        $article_sql = "SELECT article.article, article.title, article.article_id FROM article WHERE person_id='{$id}'";
 
         $author_result =  mysqli_query($conn, $user_sql);
         $article_result = mysqli_query($conn, $article_sql);

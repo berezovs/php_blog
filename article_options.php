@@ -1,0 +1,11 @@
+<?php 
+    session_start();
+    if(isset($_SESSION["login_id"])){
+        if(isset($_POST['delete'])){
+            print_r($_POST);
+        }elseif(isset($_POST['edit'])){
+            print_r($_POST);
+        }
+        //if($_SESSION["login_id"]==)
+    }
+?>

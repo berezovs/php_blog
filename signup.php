@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
         $password = htmlspecialchars($_POST["password"]);
     }
     if (empty($_POST['email'])) {
-        echo "Email is requred";
+        echo "Email is required";
     } else {
         $email = htmlspecialchars($_POST["email"]);
     }
