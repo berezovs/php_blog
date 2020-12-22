@@ -52,7 +52,8 @@ input[type=submit] {
     margin: auto;
 }
 
-.login {
+.login,
+.logout {
     color: white;
     text-decoration: none;
 }
@@ -62,6 +63,7 @@ input[type=submit] {
 }
 
 .error {
+    text-align: center;
     color: red;
 }
 

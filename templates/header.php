@@ -5,6 +5,10 @@
         <title>Personal Pages</title>
         <meta charset="utf-8">
         <h2>Personal Pages</h2>
-        <a href="login_form.php" class="login">Login</a>
+         <?php if (isset($_SESSION["login_id"])) {
+                    echo'<a href="logout.php" class="logout">Logout</a>';
+                } else {
+                    echo '<a href="login_form.php" class="login">Login</a>';
+                } ?> 
     </div>
 </head>
