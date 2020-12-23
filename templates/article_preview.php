@@ -1,6 +1,8 @@
 <section>
     <?php if ($articles != null) {
         foreach ($articles as $article) {
+            $_SESSION["articles"]  = array();
+            $_SESSION["articles"] += [$article["article_id"]=>["title"=>$article['title'], 'article'=>$article['article']]];
     ?>
             <div class="article">
                 <h1 class="title"><?php echo $article["title"] ?></h1>

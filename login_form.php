@@ -16,7 +16,7 @@ include("config/db.config.php")
             <input type="text" name="username" class="textbox">
             <label for="password">Password</label>
             <input type="password" name="password" class="textbox" value="" minlength="8" placeholder="" required>
-            <input type="submit" name="submit" value="submit">
+            <input type="submit" name="submit" value="submit"/>
         </form>
     </div>
 </body>

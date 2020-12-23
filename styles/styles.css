@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
+    color: rgba(57, 63, 65, 1);
 }
 
 body {
@@ -10,6 +11,10 @@ body {
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+}
+
+h2 {
+    color: white;
 }
 
 p {
@@ -59,6 +64,7 @@ input[type=submit] {
 }
 
 .message {
+    text-align: center;
     margin: auto;
 }
 

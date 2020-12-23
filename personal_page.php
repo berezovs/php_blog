@@ -22,7 +22,7 @@ if (isset($_SESSION["login_id"])) {
         } else {
             $articles = mysqli_fetch_all($article_result, MYSQLI_ASSOC);
         }
-    }else{
+    } else {
         $errors["article"] = "Not authorized to view this page";
     }
 } else {

@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
         $username = htmlspecialchars($_POST["username"]);
     }
     if (empty($_POST['password'])) {
-        echo "Password is requred";
+        echo "Password is required";
     } else {
         $password = htmlspecialchars($_POST["password"]);
     }
